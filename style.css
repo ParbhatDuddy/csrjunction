@@ -186,7 +186,6 @@
     font-size: 14px;
     border-radius: 20px;
     background: linear-gradient(45deg, rgba(38, 208, 206, .5) 0%, rgba(26, 41, 128, .7) 100%);
-
 }
 
 .carousel-title {
@@ -591,6 +590,22 @@ margin-right: 6px;
     color: #26D0CE;
 }
 /* Footer */
+/* About Us Page */
+.about-hero{
+    background:url(source/images/about-hero.svg)no-repeat center center/cover ;
+    /* background-size: 100%; */
+    
+}
+.about-hero>*:first-child{
+    padding: 8% ;
+
+}
+.about-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* About Us Page */
 
 
 

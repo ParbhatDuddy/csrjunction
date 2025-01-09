@@ -1,3 +1,17 @@
+// Importing Header
+// Function to fetch and inject HTML content
+fetch('includes/header.html')
+.then(response => response.text())
+.then(data => document.getElementById('header').innerHTML = data);
+
+fetch('includes/footer.html')
+.then(response => response.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+
+
+// Importing Header
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1.2,
     spaceBetween: 30,
