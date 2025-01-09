@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csr</title>
+    <!-- Font Awesome Links -->
+    <script src="https://kit.fontawesome.com/21af130bf2.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Links -->
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Links -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper -->
+    <!-- Linking Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking Css -->
+</head>
+
+<body>
+    <!-- Pre header -->
+    <div class="section-bg p-2">
+        <div class="container-lg d-flex justify-content-between flex-wrap gap-3">
+            <div class=" icon-wrapper d-flex align-items-center gap-2">
+                <div class="icon-frame"><a href="#"
+                        class="text-decoration-none d-flex justify-content-center h-100 align-items-center"><i
+                            class="fa-brands fa-square-facebook icon-space"></i></a>
+                </div>
+                <div class="icon-frame"><a href="#"
+                        class="text-decoration-none d-flex justify-content-center h-100 align-items-center"><i
+                            class="fa-brands fa-instagram icon-space"></i></a>
+                </div>
+                <div class="icon-frame"><a href="#"
+                        class="text-decoration-none d-flex justify-content-center h-100 align-items-center"><i
+                            class="fa-brands fa-youtube icon-space"></i></a>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 text-white fw-medium">
+                <i class="fa-solid fa-phone"></i>
+                <p class="mb-0 ">+91-83860 47265</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Pre header -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl container-xl d-none d-xl-block">
+        <div class="container-fluid">
+            <div><img src="source/images/logo.svg" alt=""></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto nav-list d-flex gap-3 align-items-center ">
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#"> For
+                            Corporates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">For NGOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none active nav-tags" aria-current="page" href="#">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none  active nav-tags" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item m-xl-auto d-flex ps-2 gap-3">
+                        <button class="btn secondary-btn gradient-text">Login</button>
+                        <button class="btn primary-btn">Signup</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Navbar-offcanvas -->
+    <div class="d-xl-none">
+        <div class="d-flex justify-content-between flex-wrap p-2">
+            <div class="d-flex align-items-center justify-content-center"><img src="source/images/logo.svg" alt="Logo">
+            </div>
+            <div class="offcanvas-bars">
+                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling" style="color: #207fa8;"></i>
+            </div>
+        </div>
+        <div class="offcanvas custom-offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                <button type="button" class="btn-close custombtn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav  ms-auto nav-list gap-3  align-items-start ">
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#"> For
+                            Corporates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">For NGOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none active nav-tags" aria-current="page" href="#">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-decoration-none active nav-tags" aria-current="page" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none  active nav-tags" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item m-xl-auto d-flex ps-2 gap-3">
+                        <button class="btn secondary-btn gradient-text">Login</button>
+                        <button class="btn primary-btn">Signup</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar-offcanvas -->
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div id="hero-carousel" class="carousel hero-carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button " data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-center carousel-img"><img
+                            src="source/images/carousel-item1.svg" class=" " alt="Slide 1"></div>
+                    <div class="carousel-caption  text-start">
+                        <div class="d-flex flex-column gap-2">
+                            <p class="carousel-chips mb-0">Corporate CSR Policy</p>
+                            <h5 class="carousel-title mb-0">Empowering Businesses to Make a Difference</h5>
+                            <p class="title-description">Showcase your commitment to society by connecting with
+                                impactful NGOs and transforming
+                                communities through your CSR initiatives.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button class="btn primary-btn">Register CSR</button>
+                                <button class="btn  custom-btn gradient-text">Explore CSR Projects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex align-items-center justify-content-center carousel-img"><img
+                            src="source/images/carousel-item1.svg" class=" " alt="Slide 2"></div>
+                    <div class="carousel-caption  text-start">
+                        <div class="d-flex flex-column gap-2">
+                            <p class="carousel-chips mb-0">NGO Work Policy</p>
+                            <h5 class="carousel-title mb-0">NGOs Driving Change at the Grassroots</h5>
+                            <p class="title-description ">Amplify your mission by partnering with corporates ready to
+                                fund and support
+                                transformative projects</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button class="btn primary-btn"> Register NGOs</button>
+                                <button class="btn  custom-btn gradient-text">Explore NGOs Projects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex align-items-center justify-content-center carousel-img"><img
+                            src="source/images/carousel-item1.svg" class=" " alt="Slide 3"></div>
+                    <div class="carousel-caption  text-start">
+                        <div class="d-flex flex-column gap-2">
+                            <p class="carousel-chips mb-0"> How We Connect Them</p>
+                            <h5 class="carousel-title mb-0">Your Bridge to Social Impact</h5>
+                            <p class="title-description ">Our platform connects the dots between corporates and NGOs,
+                                ensuring impactful
+                                collaborations for a better tomorrow.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button class="btn primary-btn">Explore CSR Data</button>
+                                <button class="btn  custom-btn gradient-text">Join Movement</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex align-items-center justify-content-center carousel-img"><img
+                            src="source/images/carousel-item1.svg" class=" " alt="Slide 4"></div>
+                    <div class="carousel-caption  text-start">
+                        <div class="d-flex flex-column gap-2">
+                            <p class="carousel-chips mb-0">CSR Initiative by the Government of India</p>
+                            <h5 class="carousel-title mb-0">Government of India: Pioneering CSR for a Sustainable Future
+                            </h5>
+                            <p class="title-description">Discover how India’s Corporate Social Responsibility framework,
+                                driven by Section 135 of the
+                                Companies Act and supported by the National CSR Data Portal, is transforming lives and
+                                fostering
+                                inclusive growth.</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button class="btn primary-btn">Explore CSR Data</button>
+                                <button class="btn  custom-btn gradient-text">Join Movement</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <!-- Platforms -->
+    <div class="container-lg mt-5 text-center">
+        <div>
+            <p class="chips">Platforms</p>
+        </div>
+        <div>
+            <h4 class="title-heading gradient-text">Creating a Better Future Together</h4>
+        </div>
+        <div>
+            <p class="section-descriptions">A platform that bridges businesses, non-profits, and communities, creating
+                impactful <br> partnerships that drive long-term social good.</p>
+        </div>
+        <div class="grid-container container-lg ">
+
+            <div class="item item1 p-3 p-lg-4 d-flex flex-column gap-3">
+                <div class="grid-box-img"><img src="source/images/briefcase.svg" alt="briefcase"></div>
+                <div>
+                    <h3 class="box-title">Streamline Your CSR Efforts with Verified NGOs</h3>
+                    <p class="box-para">Easily connect with trusted NGOs to ensure your corporate social responsibility
+                        (CSR) initiatives are impactful and align with your values.</p>
+                </div>
+            </div>
+
+
+            <div class="item item2 p-3 p-lg-4 d-flex flex-column gap-3">
+                <div class="grid-box-img"><img src="source/images/handshake.svg" alt="briefcase"></div>
+                <div>
+                    <h3 class="box-title">Get Funding & Partnerships for Growth</h3>
+                    <p class="box-para">Empower your NGO with access to corporate funding and valuable partnerships that
+                        drive your mission forward.</p>
+                </div>
+            </div>
+
+
+            <div class="item item3 p-3 p-lg-4 d-flex flex-column gap-3">
+                <div class="grid-box-img"><img src="source/images/famicons_people.svg" alt="briefcase"></div>
+                <div>
+                    <h3 class="box-title">Together, We Create Sustainable Change</h3>
+                    <p class="box-para">By bridging the gap between corporates and NGOs, we foster meaningful
+                        collaborations that uplift communities and drive long-term social change.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Platforms -->
+    <!-- Feature projects -->
+    <div class=" mt-5 text-center features p-3 p-md-4 p-lg-5">
+        <div>
+            <p class="chips bg-white">Platforms</p>
+        </div>
+        <div>
+            <h4 class="title-heading gradient-text">Explore Active CSR Projects</h4>
+        </div>
+        <div>
+            <p class="section-descriptions">Explore impactful CSR projects making a difference in communities across
+                India. Find <br> initiatives that align with your values and take action today.</p>
+        </div>
+        <div class="grid-container container-lg ">
+
+            <div class="item text-start card">
+
+                <img src="source/images/card-1.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title box-title">Green Village Initiative <br> (Tata Group)</h5>
+                    <p class="card-text box-para">Join the mission to transform villages into eco-friendly habitats
+                        through tree plantations, clean energy solutions, and sustainable practices.</p>
+                    <a href="#" class="primary-btn text-decoration-none fw-medium">Apply Now</a>
+                </div>
+
+            </div>
+
+
+            <div class="item card text-start">
+
+                <img src="source/images/card-2.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title box-title">Empower Through <br> Education</h5>
+                    <p class="card-text box-para">Launch initiatives to provide educational resources like books,
+                        digital tablets, and scholarships to underprivileged <br>children.</p>
+                    <a href="#" class="primary-btn text-decoration-none fw-medium">Apply Now</a>
+                </div>
+
+            </div>
+
+
+            <div class="item card text-start">
+
+                <img src="source/images/card-3.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title box-title">Health Camps for Rural Communities</h5>
+                    <p class="card-text box-para">Organize free health check-ups and medical camps in rural areas to
+                        provide access to healthcare for people who lack medical facilities.</p>
+                    <a href="#" class="primary-btn text-decoration-none fw-medium">Apply Now</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Feature projects -->
+    <!-- Success Story -->
+    <div class="success text-center  p-3 p-md-4 p-lg-5">
+        <div>
+            <p class="chips">Success Story</p>
+        </div>
+        <div>
+            <h4 class="title-heading gradient-text">Our Journey of Transformative Collaborations</h4>
+        </div>
+        <div>
+            <p class="section-descriptions">Explore how partnerships between corporates and NGOs have created impactful
+                solutions, <br> transforming lives and communities for a sustainable future.</p>
+        </div>
+        <!-- grid-->
+        <div class="grid-container container-lg ">
+
+            <div class="item text-start card ">
+                <div class=" d-flex flex-column gap-3">
+                    <div class="stories p-3 d-flex flex-column gap-2">
+                        <h3 class="box-title mb-0">Wipro and Green Earth’s Journey to Clean Water</h3>
+                        <p class="box-para ">By installing over 500 water purification units in drought-affected
+                            villages, clean drinking water reached over 1 lakh people.</p>
+                    </div>
+                    <div class="card-img-cover"> <img src="source/images/wipro.svg" alt=""></div>
+                </div>
+            </div>
+
+
+            <div class="item card text-start solaraid justify-content-end d-none d-sm-flex">
+
+                <div class="solaraid-bg p-3 d-flex flex-column gap-2">
+                    <h3 class="box-title mb-0">Wipro and Green Earth’s Journey to Clean Water</h3>
+                    <p class="box-para ">By installing over 500 water purification units in drought-affected
+                        villages, clean drinking water reached over 1 lakh people.</p>
+                </div>
+
+
+            </div>
+            <div class="item card text-start d-sm-none">
+
+                <div class="card-img-cover">
+                    <img src="source/images/green-solar-panel.svg" class="card-img-top">
+                </div>
+                <div class="card-body solaraid-bg p-3 d-flex flex-column gap-2">
+
+                    <h3 class="box-title mb-0">Wipro and Green Earth’s Journey to Clean Water</h3>
+                    <p class="box-para ">By installing over 500 water purification units in drought-affected
+                        villages, clean drinking water reached over 1 lakh people.</p>
+
+                </div>
+            </div>
+
+
+            <div class="item card text-start ">
+
+                <div class=" d-flex flex-column gap-3">
+                    <div class="card-img-cover"> <img src="source/images/empowering-education.svg" alt=""></div>
+                    <div class="stories p-3 d-flex flex-column gap-2">
+                        <h3 class="box-title mb-0">Wipro and Green Earth’s Journey to Clean Water</h3>
+                        <p class="box-para ">By installing over 500 water purification units in drought-affected
+                            villages, clean drinking water reached over 1 lakh people.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- grid -->
+
+    </div>
+    <!-- Success Story -->
+    <!-- Our Process -->
+    <div class=" mt-4 text-center features p-4 p-lg-5">
+        <div>
+            <p class="chips bg-white">Our Process</p>
+        </div>
+        <div>
+            <h4 class="title-heading gradient-text">How It Works</h4>
+        </div>
+        <div>
+            <p class="section-descriptions">Discover how our platform simplifies the journey of creating meaningful
+                collaborations <br> between corporates and NGOs.</p>
+        </div>
+        <div class="grid-container2 g-4">
+            <div class="item ">
+
+                <div class="card border-0 bg-transparent h-100">
+                    <div class="hover-ef  d-flex   align-items-center justify-content-start gap-2">
+                        <h3 class="hover-num mb-0">1</h3>
+                      <div class="moving-area">
+                        <div class="moving-dashes dash-1"></div>
+                        <div class="moving-dashes dash-2"></div>
+                        <div class="moving-dashes dash-3"></div>
+                        <div class="moving-dashes dash-4"></div>
+                        <div class="moving-dashes dash-5"></div>
+                        <div class="moving-dashes dash-6"></div>
+                        <div class="moving-dashes dash-7"></div>
+                        <div class="moving-dashes dash-8"></div>
+                        <div class="moving-dashes dash-9"></div>
+                        <div class="moving-dashes dash-10"></div>
+                      </div>
+                    </div>
+                    <div class="card-body text-start p-1">
+                        <h3 class="box-title">Register <br> Your Organization</h3>
+                        <p class="box-para ">Sign up by providing your details. It's quick and easy.
+                        </p>
+
+                    </div>
+                    <div class="card-img-cover"> <img src="source/images/register.svg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card border-0 bg-transparent h-100">
+                    <div class="hover-ef d-flex  align-items-center justify-content-start gap-2">
+                        <h3 class="hover-num mb-0">2</h3>
+                       <div class="moving-area">
+                        <div class="moving-dashes dash-1"></div>
+                        <div class="moving-dashes dash-2"></div>
+                        <div class="moving-dashes dash-3"></div>
+                        <div class="moving-dashes dash-4"></div>
+                        <div class="moving-dashes dash-5"></div>
+                        <div class="moving-dashes dash-6"></div>
+                        <div class="moving-dashes dash-7"></div>
+                        <div class="moving-dashes dash-8"></div>
+                        <div class="moving-dashes dash-9"></div>
+                        <div class="moving-dashes dash-10"></div>
+                      </div>
+                    </div>
+                    <div class="card-body text-start p-1">
+                        <h3 class="box-title">Discover Matching CSR <br> Projects or NGOs</h3>
+                        <p class="box-para ">Find the perfect match for your goals or let our platform
+                            suggest one for you.</p>
+                    </div>
+                    <div class="card-img-cover"> <img src="source/images/discover.svg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card border-0 bg-transparent h-100 ">
+                    <div class="hover-ef d-flex  align-items-center justify-content-start gap-2">
+                        <h3 class="hover-num mb-0">3</h3>
+                        <div class="moving-area">
+                            <div class="moving-dashes dash-1"></div>
+                            <div class="moving-dashes dash-2"></div>
+                            <div class="moving-dashes dash-3"></div>
+                            <div class="moving-dashes dash-4"></div>
+                            <div class="moving-dashes dash-5"></div>
+                            <div class="moving-dashes dash-6"></div>
+                            <div class="moving-dashes dash-7"></div>
+                            <div class="moving-dashes dash-8"></div>
+                            <div class="moving-dashes dash-9"></div>
+                            <div class="moving-dashes dash-10"></div>
+                          </div>
+                    </div>
+                    <div class="card-body text-start p-1">
+                        <h3 class="box-title">Apply or Connect <br> Directly</h3>
+                        <p class="box-para ">Start collaborating by applying or connecting with your
+                            chosen partner. </p>
+                    </div>
+                    <div class="card-img-cover"> <img src="source/images/apply.svg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card border-0 bg-transparent h-100 ">
+                    <div class="hover-ef d-flex  align-items-center justify-content-start gap-2">
+                        <h3 class="hover-num mb-0">4</h3>
+                    </div>
+                    <div class="card-body text-start p-1">
+                        <h3 class="box-title">Monitor and Report <br> Your Impact</h3>
+                        <p class="box-para ">Track progress and generate reports to measure your success.
+
+                        </p>
+                    </div>
+                    <div class="card-img-cover"> <img src="source/images/moniter.svg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Process -->
+    <!-- Testimonial -->
+    <div class="testimonial">
+        <div class="success text-start p-3 p-md-4 p-lg-5">
+            <div>
+                <p class="chips">Testimonial</p>
+            </div>
+            <div>
+                <h4 class="title-heading gradient-text">Stories That Inspire</h4>
+            </div>
+            <div class="d-flex flex-column gap-2">
+
+                <div class="swiper mySwiper">
+                    <div class="d-flex align-items-start justify-content-between w-100">
+                        <p class="section-descriptions">Real experiences from those who have witnessed the <br> power of
+                            our
+                            CSR initiatives.</p>
+                        <div class="navigator-frame d-none d-sm-block">
+                            <div class="swiper-button-next swipe-right"></div>
+                            <div class="swiper-button-prev swipe-left"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-box  p-3 p-md-4">
+                                <p class="box-para">The platform made it incredibly easy for us to connect with the
+                                    right NGO for our digital literacy initiative. The process was seamless and
+                                    efficient.</p>
+                                <div class="d-flex gap-3 align-items-center ">
+                                    <div class="ellipse">
+                                        <img src="source/images/ellipse-1.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="testimonial-title ">Rajesh Kumar</h3>
+                                        <p class="testimonial-description mb-0">CSR Manager, Google</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="review-box  p-3 p-md-4">
+                                <p class="box-para">Thanks to this platform, we successfully launched our community
+                                    health program. The insights and partnerships we gained were invaluable.</p>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="ellipse">
+                                        <img src="source/images/ellipse-2.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="testimonial-title ">Pooja Verma</h3>
+                                        <p class="testimonial-description mb-0">CSR Head, Microsoft</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-box  p-3 p-md-4">
+                                <p class="box-para">Thanks to this platform, we successfully launched our community
+                                    health program. The insights and partnerships we gained were invaluable.</p>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="ellipse">
+                                        <img src="source/images/ellipse-2.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="testimonial-title ">Pooja Verma</h3>
+                                        <p class="testimonial-description mb-0">CSR Head, Microsoft</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-box  p-3 p-md-4">
+                                <p class="box-para">Thanks to this platform, we successfully launched our community
+                                    health program. The insights and partnerships we gained were invaluable.</p>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="ellipse">
+                                        <img src="source/images/ellipse-2.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="testimonial-title ">Pooja Verma</h3>
+                                        <p class="testimonial-description mb-0">CSR Head, Microsoft</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Testimonial -->
+    <!-- Engagement -->
+    <div class="features p-4 p-lg-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="">
+                    <p class="chips bg-white">Engagement</p>
+                    <h4 class="title-heading gradient-text ">Be the Change You Wish <br> to See</h4>
+                    <p class="section-descriptions">Whether you’re an NGO or a corporate, let’s <br> collaborate to make
+                        a lasting impact.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row g-3 g-lg-4">
+                    <div class="col-lg-6 ">
+                        <div class="d-flex rounded gap-2 flex-column bg-white p-4 p-lg-4 text-center">
+                            <div class="box-title mb-0">Register Your NGO Today</div>
+                            <div class="box-para">Get discovered by leading corporates and scale your initiatives
+                                effortlessly.</div>
+                            <div class="mt-2"><a href="#" class="primary-btn text-decoration-none fw-medium">Register
+                                    Now</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex rounded gap-2 flex-column bg-white p-4 p-lg-4  text-center">
+                            <div class="box-title mb-0">Register Your NGO Today</div>
+                            <div class="box-para">Get discovered by leading corporates and scale your initiatives
+                                effortlessly.</div>
+                            <div class="mt-2"><a href="#" class="primary-btn text-decoration-none fw-medium">Register
+                                    Now</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Engagement -->
+    <!-- Footer -->
+    <div class="footer  p-4 p-lg-5">
+        <div class="row g-4 g-lg-5">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class=" d-flex flex-column gap-3">
+                    <div><img src="source/images/logo.svg" alt=""></div>
+                    <div>
+                        <p class="medium-para">
+                            Corporate Social Responsibility (CSR) is a self-regulating business model that ensures a
+                            company is socially accountable—to itself, its stakeholders, and the public.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class=" text-start d-flex flex-column gap-2 gap-lg-3">
+                    <h3 class="tag-heading">Quick Links</h3>
+                    <ul class="quick-links d-flex flex-column gap-1">
+                        <li><a href="#" class="text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none">Store Locator</a></li>
+                        <li><a href="#" class="text-decoration-none">Projects</a></li>
+                        <li><a href="#" class="text-decoration-none">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="text-start  d-flex flex-column  gap-2 gap-lg-3">
+                    <h3 class="tag-heading">Our Sector</h3>
+                    <ul class="quick-links d-flex flex-column gap-1">
+                        <li><a href="#" class="text-decoration-none">For Corporates</a></li>
+                        <li><a href="#" class="text-decoration-none">For NGOs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="text-start  d-flex flex-column  gap-2 gap-lg-3 conatct-us">
+                    <h3 class="tag-heading">Contact Us</h3>
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex align-items-start">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p class="mb-0"> F 225 A, kirti Nagar, Rori Bazar, Road,
+                                New Delhi - 110092</p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p class="mb-0"> info@csrjunction.com <br>1800 000 9004</p>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <p class="mb-0">+91-83860 47265</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+<!-- Post-Footer-->
+<div class="section-bg ">
+    <div class="container-lg d-flex justify-content-between flex-wrap gap-3 p-2">
+        <div class=" text-white d-flex gap-1 align-items-center">
+
+        <p class="mb-0 copyright-symbol">&copy; </p>
+        <p class="mb-0 fw-medium">2025 All rights reserved.</p>
+        </div>
+
+        <div class="d-flex align-items-center gap-2 text-white fw-medium">
+        <p class="mb-0"><a href="#" class="text-decoration-none text-white fw-medium" >Privacy Policy </a>|<a href="#" class="text-decoration-none text-white" > Disclaimer </a></p>
+        </div>
+    </div>
+
+</div>
+<!-- Post-Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
