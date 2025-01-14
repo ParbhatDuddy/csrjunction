@@ -619,6 +619,15 @@ margin-right: 6px;
     background:url(source/images/forngo-hero.svg)no-repeat center center/cover ;
 }
 /* For-NGO Page */
+/* Projects Page */
+.filter-projects-drop{
+    border: 1px solid silver;
+}
+.section-bg.dropdown-toggle::after{
+   width: 0;
+}
+/* Projects Page */
+
 
 
 
