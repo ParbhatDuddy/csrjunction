@@ -154,7 +154,7 @@
 }
 
 .custom-offcanvas {
-    background: linear-gradient(to right, #3eaaa8 0%, #445ad5e7 100%);
+    background: linear-gradient(to right, #26D0CE 0%, #3749aee7 100%);
 }
 
 .custombtn-close {
@@ -163,19 +163,19 @@
 
 /* Offcanvas Navbar */
 /* Hero Section */
-.carousel-img img {
+.hero-carousel .carousel-inner .carousel-item img{
     aspect-ratio: 16/5;
     object-fit: cover;
+height: 100%;
+width: 100%;
 }
-
-.carousel-item .carousel-caption {
-    content: '';
+.hero-carousel .carousel-inner .carousel-item .carousel-caption{
     position: absolute;
     top: 10%;
     left: 10%;
-    height: 100%;
-    width: 40%;
+    width: 50%;
 }
+
 
 
 
@@ -596,7 +596,7 @@ margin-right: 6px;
     /* background-size: 100%; */
     
 }
-.about-hero>*:first-child{
+.p-hero>*:first-child{
     padding: 8% ;
 
 }
@@ -606,27 +606,43 @@ margin-right: 6px;
     object-fit: cover;
 }
 /* About Us Page */
+/* For-CSR Page */
+.forcsr-hero{
+    background:url(source/images/for-csr-herobg.svg)no-repeat center center/cover ;
+}
+
+
+/* For-CSR Page */
 
 
 
 
 
-
+@media (max-width:1150px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/6;
+    }
+    .hero-carousel .carousel-inner .carousel-item .carousel-caption{
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        width: 55%;
+    }
+    
+}
 
 /* Media Queries */
 @media (max-width:992px) {
-    .carousel-img img {
-        aspect-ratio: 16/4.6;
-        object-fit: cover;
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/8;
+    }
+    .hero-carousel .carousel-inner .carousel-item .carousel-caption{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        width: 70%;
     }
 
-    .carousel-item .carousel-caption {
-      
-        top: 6%;
-        left: 10%;
-      
-        width: 65%;
-    }
     .nav-tags:hover {
         color: #ffffff;
     }
@@ -652,7 +668,7 @@ margin-right: 6px;
 
     .box-title {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .box-para {
@@ -688,8 +704,17 @@ margin-right: 6px;
 }
 
 @media (max-width:768px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/7;
+    }
+    .hero-carousel .carousel-inner .carousel-item .carousel-caption{
+        position: absolute;
+        top: 0%;
+        left: 5%;
+      width: 90%;
+    }
     .carousel-title {
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 600;
     }
 
@@ -733,25 +758,46 @@ margin-right: 6px;
 
         grid-template-columns: repeat(2, 1fr);
     }
-   
-    .carousel-img img {
-        aspect-ratio: 16/4.8;
-        object-fit: cover;
+    .hero-carousel .carousel-inner .carousel-item .carousel-caption{
+        top: 5%;
+        left: 6%;
+        width: 80%;
     }
 
-    .carousel-item .carousel-caption {
-        content: '';
-        position: absolute;
-        top: 3%;
-        left: 8%;
-        height: 100%;
-        width: 85%;
-    }
 
 
 }
+@media (max-width:640px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/9;
+    }
+    .hero-carousel .carousel-inner .carousel-item .carousel-caption{
+        left: 3%;
+      width: 96%;
+    }
+    
+}
+@media (max-width:540px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/10;
+    }
+    .carousel-title{
+        font-size: 20px;
+    }
+    .title-description {
+        font-size: 12px;
+    }
+    
+}
 
 @media (max-width:460px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/13;
+      
+    }
+    .carousel-title{
+        font-size: 18px;
+    }
     .grid-container {
 
         grid-template-columns: repeat(1, 1fr);
@@ -764,19 +810,12 @@ margin-right: 6px;
     }
 
 }
-@media (max-width:333px) {
-    .carousel-img img {
-        aspect-ratio: 16/5;
-        object-fit: cover;
+@media (max-width:343px) {
+    .hero-carousel .carousel-inner .carousel-item img{
+        aspect-ratio: 16/18;
     }
-
-    .carousel-item .carousel-caption {
-        content: '';
-        position: absolute;
-        top: 0%;
-        left: 4%;
-        height: 100%;
-        width: 90%;
+    .carousel-chips{
+        font-size: 10px;
     }
 }
 
