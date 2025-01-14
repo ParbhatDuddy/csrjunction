@@ -157,7 +157,8 @@
 }
 
 .custom-offcanvas {
-    background: linear-gradient(to right, #26D0CE 0%, #3749aee7 100%);
+    background: linear-gradient(to right, #3749ae 0%, #26d0cdcf 100%);
+    /* background: #24e6e3f6; */
 }
 
 .custombtn-close {
@@ -597,7 +598,6 @@ margin-right: 6px;
 .about-hero{
     background:url(source/images/about-hero.svg)no-repeat center center/cover ;
     /* background-size: 100%; */
-    
 }
 .p-hero>*:first-child{
     padding: 8% ;
@@ -613,9 +613,12 @@ margin-right: 6px;
 .forcsr-hero{
     background:url(source/images/for-csr-herobg.svg)no-repeat center center/cover ;
 }
-
-
 /* For-CSR Page */
+/* For-NGO Page */
+.forngo-hero{
+    background:url(source/images/forngo-hero.svg)no-repeat center center/cover ;
+}
+/* For-NGO Page */
 
 
 
