@@ -449,16 +449,6 @@ animation-play-state:running;
 
 /* Animation */
 
-
-
-
-
-
-
-
-
-
-
 .hover-ef {
     margin-bottom: 8px;
 
@@ -469,7 +459,81 @@ animation-play-state:running;
     color: #fff;
 }
 
+/* How it works page  */
+.moving-area-vertical{
+    position: relative;
+    /* background-color: #f3f3f3; */
+    width: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moving-dashes-vertical{
+    
+    position: absolute;
+    width: 2px;
+   height: 10px;
+    background-color:#26D0CE;  
+animation: movedown 3s infinite linear;
+animation-play-state:running;
+/* animation-play-state:paused; */
+/* animation: animateOnLoad 2s forwards; */
+}
+
+.vdash-1{
+    animation-delay: 0s;
+}
+.vdash-2{
+    animation-delay: .5s;
+}
+.vdash-3{
+    animation-delay: 1s;
+}
+.vdash-4{
+    animation-delay: 1.5s;
+}
+.vdash-5{
+    animation-delay: 2.5s;
+}
+.vdash-6{
+    animation-delay: 3.0s;
+}
+.vdash-7{
+    animation-delay: 3.5s;
+} 
+.vdash-8{
+    animation-delay: 4s;
+}
+.vdash-9{
+    animation-delay: 4.5s;
+}
+
+.vdash-10{
+    animation-delay: 5s;
+} 
+.gc2-item .item .hover-ef>.hover-num{
+    background-color: rgba(243, 243, 243, 0.756);
+}
+.gc2-item .item:hover .hover-ef>.hover-num{
+    background: linear-gradient(to right, #26D0CE 0%, #1A2980 100%);
+    color: #fff;
+}
+/* How it works page */
+
+
+
+
+
+
+
+
+
+
+
+
 /* How it works */
+
 /* Testimonial */
 
 .ellipse {
@@ -603,6 +667,7 @@ margin-right: 6px;
     padding: 8% ;
 
 }
+
 .about-img img{
     height: 100%;
     width: 100%;
@@ -630,7 +695,81 @@ margin-right: 6px;
 
 }
 /* Projects Page */
+/* Contact Us */
+.contact-us-form{
+    background-color: #25C1C7;
+    padding: 2%;
+    border-radius: 4px;
+}
+.form-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact-us-form form input{
+    padding: 2.5%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-us-form form textarea{
+    padding:  2.5%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-us-form form button{
+    padding:  2.2%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color:#1A2980;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.contact-icon-frame{
+    height: 60px;
+    width: 60px;
+    background-color: #F0F8FF;
+    border-radius: 50%;
+}
+.contact-icon-frame i{
+    font-size: 24px;
+color: #26D0CE;
+}
+.mailbox-heading{
+    font-size: 18px;
+    font-weight: 600;
+    color: #414040;
+}
+.mailbox-para{
+    font-size: 14px;
+    color: #5D5D5D;
+}
+.contact-us-form form button:hover{
+    background-color: #15205e;
+}
+.location-map iframe{
+height: 400px;    
+}
+/* Contact Us */
+/* Privacy Policy */
+.privacypolicy-hero{
+    background: url(source/images/privacypolicy.svg) no-repeat center center/cover;
+}
+.normal-para{
+    font-size: 16px;
+    color: #5D5D5D;
+    font-weight: 500;
 
+}
+.data-list li{
+color: #5D5D5D;
+font-size: 14px;
+
+}
+/* Privacy Policy */
 
 
 
@@ -781,7 +920,40 @@ margin-right: 6px;
         left: 6%;
         width: 80%;
     }
+/* Contact Us Page */
 
+.form-title{
+    font-size: 20px;
+}
+.contact-us-form form button{
+    font-size: 16px;
+}
+
+.contact-icon-frame{
+    height: 50px;
+    width: 50px;
+
+}
+.contact-icon-frame i{
+    font-size: 20px;
+color: #26D0CE;
+}
+.mailbox-heading{
+    font-size: 16px;
+    font-weight: 600
+}
+.mailbox-para{
+    font-size: 12px;
+    color: #5D5D5D;
+}
+.contact-us-form form input::placeholder{
+    font-size: 14px;
+} 
+
+.location-map iframe{
+    height: 300px;    
+    }
+/* Contact Us Page */
 
 
 }
@@ -848,4 +1020,13 @@ margin-right: 6px;
         left: 120%;
     }
 }
+@keyframes movedown {
+    from{
+        top: 0;
+    }
+    to{
+        top: 110%;
+    }
+} 
+    
 /* KeyFrames Section */
