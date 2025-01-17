@@ -14,7 +14,7 @@
 
 :root {
     --primary-color: #F0F8FF;
-    --background1-color: #EDF9F2;
+    --background1-color: #edf9f2;
 
     --background2-color: #F1EBFF;
 }
@@ -770,6 +770,24 @@ font-size: 14px;
 
 }
 /* Privacy Policy */
+/* Projects details */
+.projectdetail-hero{
+    background: url(source/images/project-detail-bg.svg) no-repeat center center/cover;
+}
+/* Projects details */
+/* Key Features */
+.keyfeatures{
+    background: url(source/images/key_feature_bg.svg) no-repeat center center/cover;
+}
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* Key Features */
 
 
 
@@ -857,6 +875,9 @@ font-size: 14px;
         }
         .conatct-us p{
             font-size: 13px;
+        }
+        .grid-container3{
+            grid-template-columns: repeat(2, 1fr);
         }
 }
 
@@ -965,6 +986,7 @@ color: #26D0CE;
         left: 3%;
       width: 96%;
     }
+   
     
 }
 @media (max-width:540px) {
@@ -976,6 +998,9 @@ color: #26D0CE;
     }
     .title-description {
         font-size: 12px;
+    }
+    .grid-container3{
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
