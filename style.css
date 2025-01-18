@@ -788,7 +788,55 @@ font-size: 14px;
 }
 
 /* Key Features */
-
+/* Sign Up page */
+.signup{
+    background-color: #CCCCCC80;
+}
+.sign-left{
+    background: url(source/images/signup-bg.svg) no-repeat center center/cover;
+}
+.sign-left .title-heading{
+    font-weight: 700;
+}
+.signup-title{
+    color: #25C1C7;
+    font-size: 28px;
+    font-weight: 700;
+}
+.signup-form form input{
+    padding: 2.5%;
+    width: 100%;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.signup-form form input::placeholder{
+    font-size: 14px;
+}
+.signup-form form button{
+    padding: 2%;
+    color: #fff;
+    background-color: #25C1C7;
+    /* width: 75%; */
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.password-input{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    transform: translateY(50%);
+    right: 5%;
+    color: #8a8989c3;
+}
+.signup-or{
+    color: #8a8989c3;
+    font-weight: 400;
+}
+/* Sign Up page */
 
 
 
