@@ -40,7 +40,7 @@
             <p class="title-description">Find impactful projects to support or draw inspiration from <br
                     class="d-none d-md-block"> completed initiatives. </p>
             <div class="">
-                <button class="btn primary-btn">Register CSR</button>
+                <button class="btn primary-btn" onclick="window.location.href='csr-registration.html'">Register CSR</button>
             </div>
         </div>
     </div>
@@ -48,60 +48,386 @@
 
 
     <!-- Category Filter -->
-    <div class="container-xl filter-container">
+
+    <div class="container-xl d-none d-sm-flex flex-column justify-content-center gap-3 gap-lg-4 p-3 p-xl-4">
         <h4 class="title-heading gradient-text text-center">Filter CSR Projects</h4>
-        <div class="selectbox-area d-flex justify-content-between">
-            <select id="category1">
-                <option value="">Select Category </option>
-                <option value="cat1-1">Focus Area</option>
-                <!-- <option value="cat1-2">Category 1 - Option 2</option> -->
-                <!-- <option value="cat1-3">Category 1 - Option 3</option> -->
-            </select>
+        <div class="d-flex align-items-center justify-content-lg-center gap-3 gap-lg-4  flex-wrap px-0  ">
 
+            <div class="select-container">
+                <select class="filter-selectbox">
+                    <option selected value="focus-area">Focus Area</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Education">Education</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Community-development">Community Development</option>
+                    <option value="Social-welfare">Social Welfare</option>
+                </select>
 
-            <select id="category2">
-                <option value="">Select Category </option>
-                <option value="cat2-1">Region</option>
-                <!-- <option value="cat2-2">Category 2 - Option 2</option> -->
-                <!-- <option value="cat2-3">Category 2 - Option 3</option> -->
-            </select>
+            </div>
+            <div class="select-container">
+                <select class="filter-selectbox">
+                    <option selected value="Region">Region</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Delhi NCR">Delhi NCR</option>
+                    <option value="Pan-India">Pan-India</option>
+                </select>
 
+            </div>
+            <div class="select-container">
+                <select class="filter-selectbox">
+                    <option selected value="Budget-Range">Budget Range</option>
+                    <option value="range-1">₹0 – ₹1,00,000</option>
+                    <option value="range-2">₹1,00,001 – ₹5,00,000</option>
+                    <option value="range-3">₹5,00,001 – ₹10,00,000</option>
+                    <option value="range-4">₹10,00,001+</option>
 
-            <select id="category3">
-                <option value="">Select Category </option>
-                <option value="cat3-1">Budget Range</option>
-                <!-- <option value="cat3-2">Category 3 - Option 2</option> -->
-                <!-- <option value="cat3-3">Category 3 - Option 3</option> -->
-            </select>
+                </select>
 
+            </div>
+            <div class="select-container">
+                <select class="filter-selectbox">
+                    <option selected value="Project-Status">Project Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Completed">Completed</option>
+                </select>
 
-            <select id="category4">
-                <option value="">Select Category </option>
-                <option value="cat4-1">Project Status</option>
-                <!-- <option value="cat4-2">Category 4 - Option 2</option> -->
-                <!-- <option value="cat4-3">Category 4 - Option 3</option> -->
-            </select>
+            </div>
 
-            <button onclick="applyFilter()">Apply Filter</button>
+            <button class="primary-btn filter-btn">Apply Filter</button>
         </div>
+
     </div>
-<div class="container-xl">
-    <div class="product-list">
-        <div class="product" data-cat1="cat1-1" data-cat2="cat2-1" data-cat3="cat3-2" data-cat4="cat4-3">
+    <!-- Offcanvas Filter-->
 
-        </div>
-        <div class="product" data-cat1="cat1-2" data-cat2="cat2-3" data-cat3="cat3-1" data-cat4="cat4-1">
+    <!-- Offcanvas Filter-->
 
-        </div>
-        <div class="product" data-cat1="cat1-3" data-cat2="cat2-2" data-cat3="cat3-3" data-cat4="cat4-2">
-            Product 3
-        </div>
-        <div class="product" data-cat1="cat1-1" data-cat2="cat2-2" data-cat3="cat3-1" data-cat4="cat4-1">
-            Product 4
-        </div>
-    </div>
-</div>
     <!-- Category Filter -->
+    <!-- Filtered Porjects -->
+    <div class="features">
+        <div class="container-xl p-3 p-lg-5 d-flex flex-column gap-3">
+            <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                <div class="d-sm-none p-2 features">
+                    <button class="d-flex gap-2 align-items-center justify-content-start filter-offcanvas-btn "
+                        data-bs-toggle="offcanvas" href="#offcanvasSecond" aria-controls="offcanvasSecond">
+                        <div class="bars-filter-cover d-flex justify-content-center align-items-center"><img
+                                src="source/images/bars-filter.svg" alt=""></div>
+                        <h3 class=" mb-0 filter-text">Filters</h3>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSecond"
+                        aria-labelledby="offcanvasSecondLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasSecondLabel">Filter CSR Projects </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div
+                                class="d-flex align-items-center justify-content-lg-center gap-3 gap-lg-4  flex-wrap px-0  ">
+
+                                <div class="select-container">
+                                    <select class="filter-selectbox">
+                                        <option selected value="focus-area">Focus Area</option>
+                                        <option value="Environment">Environment</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Community-development">Community Development</option>
+                                        <option value="Social-welfare">Social Welfare</option>
+                                    </select>
+
+                                </div>
+                                <div class="select-container">
+                                    <select class="filter-selectbox">
+                                        <option selected value="Region">Region</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Delhi NCR">Delhi NCR</option>
+                                        <option value="Pan-India">Pan-India</option>
+                                    </select>
+
+                                </div>
+                                <div class="select-container">
+                                    <select class="filter-selectbox">
+                                        <option selected value="Budget-Range">Budget Range</option>
+                                        <option value="range-1">₹0 – ₹1,00,000</option>
+                                        <option value="range-2">₹1,00,001 – ₹5,00,000</option>
+                                        <option value="range-3">₹5,00,001 – ₹10,00,000</option>
+                                        <option value="range-4">₹10,00,001+</option>
+
+                                    </select>
+
+                                </div>
+                                <div class="select-container">
+                                    <select class="filter-selectbox">
+                                        <option selected value="Project-Status">Project Status</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Completed">Completed</option>
+                                    </select>
+
+                                </div>
+
+                                <button class="primary-btn filter-btn">Apply Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="title-heading gradient-text text-center mb-0 active-csr-font">Active CSR Projects</h4>
+            </div>
+            <div class="grid-container container-xl ">
+
+                <div class="item text-start card">
+
+                    <img src="source/images/active-1.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between ">
+                        <h5 class="card-title box-title fw-semibold">Clean Water Initiative</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹5,00,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="project-detail.html" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="item card text-start ">
+
+                    <img src="source/images/active-2.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between gap-lg-2">
+                        <h5 class="card-title box-title fw-semibold">Empowering Rural Women</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Education & Skill
+                                    Development</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹8,00,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item card text-start">
+
+                    <img src="source/images/active-3.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-between flex-column">
+                        <h5 class="card-title box-title fw-semibold">Tree Plantation Drive</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹2,50,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item card text-start ">
+
+                    <img src="source/images/active-2.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between gap-lg-2">
+                        <h5 class="card-title box-title fw-semibold">Empowering Rural Women</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Education & Skill
+                                    Development</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹8,00,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item card text-start">
+
+                    <img src="source/images/active-3.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex justify-content-between flex-column">
+                        <h5 class="card-title box-title fw-semibold">Tree Plantation Drive</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹2,50,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item text-start card">
+
+                    <img src="source/images/active-1.svg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between ">
+                        <h5 class="card-title box-title fw-semibold">Clean Water Initiative</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹5,00,000</p>
+                            </li>
+                            <li>
+                                <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Filtered Porjects -->
+    <!-- Completed Projects -->
+    <div class="container-xl p-3 p-lg-5 d-flex flex-column gap-3 completed-projects">
+        <h4 class="title-heading gradient-text text-center">Completed CSR Projects</h4>
+        <div class="grid-container container-xl ">
+
+            <div class="item text-start card">
+
+                <img src="source/images/active-1.svg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between gap-lg-2 features">
+                    <h5 class="card-title box-title fw-semibold">Clean Water Initiative</h5>
+                    <ul>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹5,00,000</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="project-detail.html" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="item card text-start ">
+
+                <img src="source/images/active-2.svg" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column justify-content-between gap-lg-2 features">
+                    <h5 class="card-title box-title fw-semibold">Empowering Rural Women</h5>
+                    <ul>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Education & Skill
+                                Development</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹8,00,000</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item card text-start">
+
+                <img src="source/images/active-3.svg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-between flex-column features">
+                    <h5 class="card-title box-title fw-semibold">Tree Plantation Drive</h5>
+                    <ul>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Focus Area:</strong> Environment</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Region:</strong> Haryana</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-1"><strong>Budget:</strong> ₹2,50,000</p>
+                        </li>
+                        <li>
+                            <p class="card-text box-para mb-0"><strong>Status:</strong> Active</p>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="primary-btn text-decoration-none fw-medium">View Detail</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Completed Projects -->
 
     <!-- Importing Footer -->
     <div id="footer"></div>

@@ -16,6 +16,7 @@
     --primary-color: #F0F8FF;
     --background1-color: #edf9f2;
     --background2-color: #F1EBFF;
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
 }
 
 /* Css Reset */
@@ -159,8 +160,8 @@
 
 .custom-offcanvas {
     /* background: linear-gradient(to right, #3749ae 0%, #26d0cdcf 100%); */
-    background-color:#fffffffb ;
-    
+    background-color: #fffffffb;
+
 }
 
 .custombtn-close {
@@ -720,15 +721,7 @@
 }
 
 /* For-NGO Page */
-/* Projects Page */
-/* .filter-projects-drop{
-    border: 1px solid silver;
-}
 
-.section-bg.dropdown-toggle::after{
-  color: #fff;
-} */
-/* Projects Page */
 /* Contact Us */
 .contact-us-form {
     background-color: #25C1C7;
@@ -742,21 +735,32 @@
     color: #fff;
 }
 
-.contact-us-form form input {
-    padding: 2.5%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
+.group-inputbox input{
+   padding: 2% 0% 2% 3%;
+   border-radius: 2px;
+   font-size: 15px;
+   background-color: #fff!important;
+   border: 1px solid silver!important;
+}
+.group-inputbox input::placeholder{
+    color: #acacac;
+}
+.group-inputbox textarea::placeholder{
+    color: #acacac;
+}
+.group-inputbox span i{
+    color: #fff;  
+}
+.group-inputbox span{
+    flex: .05;
+    background: linear-gradient(to right, #26D0CE 0%, #1A2980 100%);
+}
+.group-inputbox textarea{
+    padding: 2% 0% 2% 3%;
+    border-radius: 2px;
 }
 
-.contact-us-form form textarea {
-    padding: 2.5%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-}
-
-.contact-us-form form button {
+.submit-button {
     padding: 2.2%;
     border: none;
     outline: none;
@@ -764,6 +768,7 @@
     background-color: #1A2980;
     font-weight: 500;
     font-size: 18px;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -773,6 +778,11 @@
     background-color: #F0F8FF;
     border-radius: 50%;
 }
+.specialicon-frame i{
+  color: #04a5ab;
+}
+
+
 
 .contact-icon-frame i {
     font-size: 24px;
@@ -790,7 +800,7 @@
     color: #5D5D5D;
 }
 
-.contact-us-form form button:hover {
+.submit-button:hover {
     background-color: #15205e;
 }
 
@@ -821,6 +831,58 @@
     background: url(source/images/project-detail-bg.svg) no-repeat center center/cover;
 }
 
+.filter-selectbox {
+    appearance: none;
+    border: 1px solid silver;
+    outline: 0;
+    font: inherit;
+    width: 13rem;
+    padding: .5rem 2.2rem .5rem .5rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, #25C1C7 3em, transparent 3em);
+    color: #000;
+    border-radius: 2px;
+    font-size: 12px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    option {
+        color: inherit;
+        background-color: #fff;
+    }
+}
+
+.filter-btn {
+    padding: .4rem 2.2rem .4rem 2.2rem;
+}
+.completed-projects{
+    opacity: .5;
+}
+
+.bars-filter-cover img{
+    height: 14px;
+    width: 14px;
+    object-fit: cover;
+}
+.filter-offcanvas-btn{
+    padding: 8px 13px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    background: linear-gradient(90deg, rgba(38, 208, 205, 0.281) 0%, rgba(26, 41, 128, 0.349) 100%);
+}
+.filter-text{
+    font-size: 12px;
+    font-weight: 500;
+}
 /* Projects details */
 /* Key Features */
 .keyfeatures {
@@ -865,11 +927,12 @@
     background-color: #F4F4F4;
     border: none;
     outline: none;
+    font-size: 12px;
     border-radius: 4px;
 }
 
 .signup-form form input::placeholder {
-    font-size: 14px;
+    font-size: 13px;
     /* padding-left: 12px; */
 }
 
@@ -881,6 +944,9 @@
     border: none;
     outline: none;
     border-radius: 4px;
+}
+.signup-form form button:hover{
+    background-color: #18aeb3;
 }
 
 .signup-or {
@@ -955,39 +1021,47 @@
 
 /* Resources Page */
 /* Csr registration  */
-.csr-registration-form{
+.csr-registration-form {
     width: 85%;
 }
-.form-inputs input{
+
+.form-inputs input {
     padding: 2.5%;
     width: 100%;
-    background-color: #F4F4F4;
-    border: none;
+    background-color: #fff;
+    border: 1px solid silver;
     outline: none;
     border-radius: 4px;
     font-size: 14px;
 }
-.form-selectbox{
+
+
+.form-selectbox {
     padding: 2.5%;
     width: 100%;
-    background-color: #F4F4F4;
-    border: none;
+    background-color: #fff;
+    border: 1px solid silver;
     outline: none;
     border-radius: 4px;
     font-size: 14px;
-font-size: 14px;
-position: relative;
-color: #6e6e6e;
-}
-.calender-input{
+    font-size: 14px;
     position: relative;
+    color: #000;
 }
-#calendar-icon{
+
+
+.calender-input {
+    position: relative;
+ 
+}
+
+#calendar-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 90%;
 }
+
 .select-wrapper {
     position: relative;
 }
@@ -995,7 +1069,7 @@ color: #6e6e6e;
 .select-wrapper .form-selectbox {
     width: 100%;
 
-    appearance: none; 
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -1006,14 +1080,15 @@ color: #6e6e6e;
     top: 50%;
     color: #6e6e6e;
     transform: translateY(-50%);
-    pointer-events: none; 
+    pointer-events: none;
 }
 
-.checkbox-input input{
+.checkbox-input input {
     font-size: 10px;
     color: #000;
 }
-.submit-btn button{
+
+.submit-btn button {
     border: none;
     outline: none;
     background-color: #25C1C7;
@@ -1022,13 +1097,14 @@ color: #6e6e6e;
     color: #fff;
     border-radius: 4px;
 }
-.submit-btn button:hover{
+
+.submit-btn button:hover {
     background-color: #04a5ab;
 }
 
 
 /* Csr registration */
-.choose-file-label{
+.choose-file-label {
     font-size: 12px;
     padding-left: 10px;
     color: #6e6e6e;
@@ -1130,6 +1206,9 @@ color: #6e6e6e;
     .grid-container3 {
         grid-template-columns: repeat(2, 1fr);
     }
+    .csr-registration-form {
+        width: 94%;
+    }
 }
 
 @media (max-width:768px) {
@@ -1202,7 +1281,7 @@ color: #6e6e6e;
         font-size: 20px;
     }
 
-    .contact-us-form form button {
+    .submit-button {
         font-size: 16px;
     }
 
@@ -1227,31 +1306,43 @@ color: #6e6e6e;
         color: #5D5D5D;
     }
 
-    .contact-us-form form input::placeholder {
-        font-size: 14px;
-    }
-
     .location-map iframe {
         height: 300px;
     }
 
     /* Contact Us Page */
-/* csr registration */
-.csr-registration-form{
-    width: 100%;
-}
-.submit-btn button{
-    font-size: 18px;
-}
-.form-inputs input{
-    padding: 4%;
-font-size: 12px;
-}
-.form-selectbox{
-    padding: 4%;
-font-size: 12px;
-}
-/* csr registration */
+    /* csr registration */
+    .csr-registration-form {
+        width: 100%;
+    }
+
+    .submit-btn button {
+        font-size: 18px;
+    }
+
+    .form-inputs input {
+        padding: 4%;
+        font-size: 12px;
+    }
+
+    .form-selectbox {
+        padding: 4%;
+        font-size: 12px;
+    }
+
+    /* csr registration */
+    /* Filter Projects */
+    .filter-btn{
+        padding: .4rem 2.2rem .4rem .5rem ;
+      }
+    /* Filter Projects */
+    /* Forms */
+    .group-inputbox input{
+        padding: 2%;
+        font-size: 12px;}
+        .form-selectbox {
+            padding: 2%;}
+    /* Forms */
 
 }
 
@@ -1289,7 +1380,19 @@ font-size: 12px;
 
         width: 100%;
     }
-
+/* Projects Filter */
+.filter-btn {
+    width: 13rem;
+    padding: .4rem 2.2rem .4rem 2.2rem;
+}
+/* Projects Filter */
+/* Forms */
+.group-inputbox input{
+padding: 4%;
+font-size: 12px;}
+.form-selectbox {
+    padding: 4%;}
+/* Forms */
 
 }
 
@@ -1315,8 +1418,13 @@ font-size: 12px;
     }
 
     .signup-form form input {
-        padding: 5%;
+        padding: 4%;
     }
+    /* Projects Page */
+    .active-csr-font{
+        font-size: 18px;
+    }
+    /* Projects Page */
 
 }
 

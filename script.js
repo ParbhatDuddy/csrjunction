@@ -46,39 +46,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-// Validate Input
-function applyFilter() {
-    var cat1 = document.getElementById("category1").value;
-    var cat2 = document.getElementById("category2").value;
-    var cat3 = document.getElementById("category3").value;
-    var cat4 = document.getElementById("category4").value;
-
-    var products = document.querySelectorAll(".product");
-
-    products.forEach(function(product) {
-        var match = true;
-
-        if (cat1 && product.getAttribute("data-cat1") !== cat1) {
-            match = false;
-        }
-        if (cat2 && product.getAttribute("data-cat2") !== cat2) {
-            match = false;
-        }
-        if (cat3 && product.getAttribute("data-cat3") !== cat3) {
-            match = false;
-        }
-        if (cat4 && product.getAttribute("data-cat4") !== cat4) {
-            match = false;
-        }
-
-        if (match) {
-            product.style.display = "inline-block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-}
-
 
 // 
 function openCalendar() {

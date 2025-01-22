@@ -46,33 +46,48 @@
                         class="signup-form text-center d-flex flex-column gap-4 justify-content-center align-items-center">
                         <h3 class="form-title signup-title mb-0">Create Account</h3>
                         <form action="" class="d-flex flex-column gap-3 w-100" id="signupForm">
-                            <input type="text" id="full-name-input" name="full-name" placeholder="Name" required>
-                            <input type="text" id="email-input" name="email" placeholder="Email Address" required>
-                            <input type="text" id="phone-number-input" name="phone-number" placeholder="Phone Number"
-                                required>
-                           
-                                <input type="password" id="password" name="password" placeholder="Password">
-                               
-                           
-                                <input type="password" id="confirm-password" name="confirm-password"
+                            <div class="input-group group-inputbox">
+                                <span class="input-group-text  d-flex justify-content-center align-items-center"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" id="full-name-input" class="form-control" name="full-name"
+                                    placeholder="Name" required>
+                            </div>
+                            <div class="input-group group-inputbox">
+                                <span class="input-group-text  d-flex justify-content-center align-items-center"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="text" id="email-input" class="form-control" name="email"
+                                    placeholder="Email Address" required>
+                            </div>
+                            <div class="input-group group-inputbox">
+                                <span class="input-group-text  d-flex justify-content-center align-items-center"><i class="fa-solid fa-phone"></i></span>
+                                <input type="text" id="phone-number-input" class="form-control" name="phone-number"
+                                    placeholder="Phone Number" required>
+                            </div>
+                            <div class="input-group group-inputbox">
+                                <span class="input-group-text  d-flex justify-content-center align-items-center"><i class="fa-solid fa-key"></i></span>
+                                <input type="password" id="password" class="form-control" name="password"
+                                    placeholder="Password">
+                            </div>
+                             <div class="input-group group-inputbox">
+                                <span class="input-group-text  d-flex justify-content-center align-items-center"><i class="fa-solid fa-key"></i></span>
+                                <input type="password" id="confirm-password" class="form-control" name="confirm-password"
                                     placeholder="Confirm Password">
-                                
+                            </div>
                             <button class="mt-lg-3 text-uppercase fw-semibold">Signup</button>
                         </form>
 
                         <div class="signup-options d-flex flex-column gap-2 gap-lg-3">
                             <h3 class="box-title text-center signup-or mb-0">-OR-</h3>
                             <div class="d-flex flex-wrap gap-3">
-                               <button class="d-flex justify-content-center gap-2 align-items-center">
-                                <img src="source/images/google-icon.svg" alt="">
-                                <p class=" mb-0">Sign up with Google</p>
-                               </button>
-                               <button class="d-flex justify-content-center gap-2 align-items-center">
-                                <img src="source/images/facebook-icon.svg" alt="">
-                                <p class=" mb-0">Sign up with Facebook</p>
-                               </button>
+                                <button class="d-flex justify-content-center gap-2 align-items-center">
+                                    <img src="source/images/google-icon.svg" alt="">
+                                    <p class=" mb-0">Sign up with Google</p>
+                                </button>
+                                <button class="d-flex justify-content-center gap-2 align-items-center">
+                                    <img src="source/images/facebook-icon.svg" alt="">
+                                    <p class=" mb-0">Sign up with Facebook</p>
+                                </button>
                             </div>
-                            <p class="box-para fw-semibold">Already have an account? <a href="login.html" class="text-decoration-none">Log In</a></p>
+                            <p class="box-para fw-semibold">Already have an account? <a href="login.html"
+                                    class="text-decoration-none">Log In</a></p>
                         </div>
                     </div>
                 </div>

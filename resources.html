@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Resources</title>
     <!-- Font Awesome Links -->
     <script src="https://kit.fontawesome.com/21af130bf2.js" crossorigin="anonymous"></script>
     <!-- Font Awesome Links -->
@@ -48,33 +48,63 @@
     <div class="container-xl p-3 p-lg-5 ">
         <div class="tab-container row g-4 g-md-5">
             <div class=" col-md-4  d-flex flex-column gap-4">
-                <div class="tabs-box p-3 d-flex flex-column gap-3 ">
-                    <h3 class="tabs-title text-lg-center  mb-0">Categories</h3>
-                    <ul class="nav flex-column " id="myTab" role="tablist">
+
+                <!-- Main Div (Single Tab Box) -->
+                <div class="tab-container d-flex flex-column gap-3 tabs-box p-3 ">
+                    <!-- Combined Nav Tabs -->
+                    <h3 class="tag-heading text-center">Categories</h3>
+                    <ul class="nav  d-flex flex-column" id="nav-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class=" active" id="blog-tab" data-bs-toggle="tab" href="#blog" role="tab"
-                                aria-controls="blog" aria-selected="true">Blog & Articles</a>
+                                aria-controls="blog-tab" aria-selected="true">Blog & Articles</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="" id="case-tab" data-bs-toggle="tab" href="#case" role="tab" aria-controls="case"
-                                aria-selected="false">Case Studies</a>
+                            <a class=" " id="case-tab" data-bs-toggle="tab" href="#case" role="tab"
+                                aria-controls="case-tab" aria-selected="true">Case Studies</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="" id="laws-tab" data-bs-toggle="tab" href="#laws" role="tab" aria-controls="laws"
-                                aria-selected="false">CSR Laws & Policies</a>
+                            <a class=" " id="laws-tab" data-bs-toggle="tab" href="#laws" role="tab"
+                                aria-controls="laws-tab" aria-selected="true">CSR Laws & Policies</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="" id="guide-tab" data-bs-toggle="tab" href="#guide" role="tab"
-                                aria-controls="guide" aria-selected="false">Guides</a>
+                            <a class=" " id="guide-tab" data-bs-toggle="tab" href="#guide" role="tab"
+                                aria-controls="guide-tab" aria-selected="true">Guides</a>
                         </li>
-                    </ul> 
-                   
+
+
+                        <li class="mt-3 mb-3">
+                            <h3 class="tag-heading text-center">Government Schemes</h3>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class=" " id="sbm-tab" data-bs-toggle="tab" href="#sbm" role="tab"
+                                aria-controls="sbm-tab" aria-selected="true">Swachh Bharat Mission (SBM)</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class=" " id="pmks-tab" data-bs-toggle="tab" href="#pmks" role="tab"
+                                aria-controls="pmks-tab" aria-selected="true">PM Kusum Scheme</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class=" " id="sim-tab" data-bs-toggle="tab" href="#sim" role="tab"
+                                aria-controls="sim-tab" aria-selected="true">Skill India Mission</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class=" " id="nrhm-tab" data-bs-toggle="tab" href="#nrhm" role="tab"
+                                aria-controls="nrhm-tab" aria-selected="true">National Rural Health Mission</a>
+                        </li>
+                        
+
+                    </ul>
+                    <!-- Tab Content -->
+
                 </div>
-               
+
+
+
             </div>
 
 
-            <div class="tab-content col-md-8" id="myTabContent">
+            <div class="tab-content col-md-8" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="blog" role="tabpanel" aria-labelledby="blog-tab">
                     <div class=" row g-4 ">
 
@@ -89,7 +119,7 @@
                                         villages to thrive.</p>
                                 </div>
                                 <div>
-                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                    <a href="project-detail.html" class="primary-btn text-decoration-none fw-medium ">Read More</a>
                                 </div>
                             </div>
 
@@ -149,29 +179,282 @@
 
                     </div>
                 </div>
-                <div class="tab-pane fade" id="case" role="tabpanel" aria-labelledby="case-tab">
-                    <h3>Case Studies</h3>
+                <div class="tab-pane fade " id="case" role="tabpanel" aria-labelledby="case-tab">
+                    <div class=" row g-4 ">
+                        <div class=" col-md-6 border-0 text-start   card">
 
-                </div>
-                <div class="tab-pane fade" id="laws" role="tabpanel" aria-labelledby="laws-tab">
-                    <h3>Laws Tab</h3>
+                            <img src="source/images/resources/blog-tab-4.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">Transforming Communities Through CSR</h5>
+                                    <p class="card-text box-para">Explore inspiring case studies of CSR projects that
+                                        have positively impacted education, healthcare, and environmental
+                                        sustainability.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-1.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">The Impact of Clean Water Projects</h5>
+                                    <p class="card-text box-para">Discover how clean water initiatives are transforming
+                                        lives in rural communities, reducing waterborne diseases, and empowering
+                                        villages to thrive.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="guide" role="tabpanel" aria-labelledby="guide-tab">
-                    <h3>Guides </h3>
+                <div class="tab-pane fade " id="laws" role="tabpanel" aria-labelledby="laws-tab">
+                    <div class=" row g-4 ">
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-1.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">The Impact of Clean Water Projects</h5>
+                                    <p class="card-text box-para">Discover how clean water initiatives are transforming
+                                        lives in rural communities, reducing waterborne diseases, and empowering
+                                        villages to thrive.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="sbm" role="tabpanel" aria-labelledby="sbm-tab">
-                    <h3>Guides </h3>
+                <div class="tab-pane fade " id="guide" role="tabpanel" aria-labelledby="guide-tab">
+                    <div class=" row g-4 ">
+
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pmks" role="tabpanel" aria-labelledby="pmks-tab">
-                    <h3>Guides </h3>
+                <div class="tab-pane fade " id="sbm" role="tabpanel" aria-labelledby="sbm-tab">
+                    <div class=" row g-4 ">
+
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="sim" role="tabpanel" aria-labelledby="sim-tab">
-                    <h3>Guides </h3>
-                </div> 
-                 <div class="tab-pane fade" id="nrhm" role="tabpanel" aria-labelledby="nrhm-tab">
-                    <h3>Guides </h3>
+                <div class="tab-pane fade " id="pmks" role="tabpanel" aria-labelledby="pmks-tab">
+                    <div class=" row g-4 ">
+
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
                 </div>
+                <div class="tab-pane fade " id="sim" role="tabpanel" aria-labelledby="sim-tab">
+                    <div class=" row g-4 ">
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-1.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">The Impact of Clean Water Projects</h5>
+                                    <p class="card-text box-para">Discover how clean water initiatives are transforming
+                                        lives in rural communities, reducing waterborne diseases, and empowering
+                                        villages to thrive.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="nrhm" role="tabpanel" aria-labelledby="nrhm-tab">
+                    <div class=" row g-4 ">
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-1.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">The Impact of Clean Water Projects</h5>
+                                    <p class="card-text box-para">Discover how clean water initiatives are transforming
+                                        lives in rural communities, reducing waterborne diseases, and empowering
+                                        villages to thrive.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-6 border-0 text-start   card">
+
+                            <img src="source/images/resources/blog-tab-3.svg" class="card-img-top" alt="...">
+                            <div class="card-body features h-100 d-flex flex-column justify-content-between gap-3">
+                                <div>
+                                    <h5 class="card-title box-title">How to Build an Effective CSR Strategy for Your
+                                        Organization</h5>
+                                    <p class="card-text box-para">Learn the key steps to design, implement, and measure
+                                        CSR strategies that align with your company’s vision and deliver meaningful
+                                        impact.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="primary-btn text-decoration-none fw-medium ">Read More</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
 
