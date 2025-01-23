@@ -1,12 +1,12 @@
 // Importing Header
 // Function to fetch and inject HTML content
 fetch('includes/header.html')
-.then(response => response.text())
-.then(data => document.getElementById('header').innerHTML = data);
+    .then(response => response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
 
 fetch('includes/footer.html')
-.then(response => response.text())
-.then(data => document.getElementById('footer').innerHTML = data);
+    .then(response => response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
 
 
 // Importing Header
@@ -28,18 +28,18 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints:{
-        500:{
+    breakpoints: {
+        500: {
             slidesPerView: 1.3,
-    spaceBetween: 30,
+            spaceBetween: 30,
         },
-        768:{
+        768: {
             slidesPerView: 2.3,
-    spaceBetween: 30,
+            spaceBetween: 30,
         },
-        1024:{
+        1024: {
             slidesPerView: 3,
-    spaceBetween: 30,
+            spaceBetween: 30,
         }
     }
 });
@@ -47,12 +47,15 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+
 // 
+
 function openCalendar() {
     flatpickr("#date", {
-      dateFormat: "d-m-Y", // Desired format (dd-mm-yyyy)
-      allowInput: true, // Optional: allows typing in the input
-    }).open(); // Opens the calendar when the input or icon is clicked
-  }
-
+        dateFormat: "d-m-Y",
+        position: "auto",
+        disableMobile: true, 
+        allowInput: true
+    }).open();
+}
 

@@ -15,6 +15,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -72,20 +73,18 @@
                         <div class="col-md-6">
                             <div class="d-flex flex-column gap-3 ">
 
-                                <div class="select-wrapper">
-                                    <select id="Organization-Type" class="form-selectbox custom-selectbox "
-                                        name="Organization-Type">
-                                        <option value="" class="disabled" selected>Type of Organization</option>
-                                        <option value="Society">Society</option>
-                                        <option value="Trust">Trust</option>
-                                        <option value="Section-8-Company">Section 8 Company</option>
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Type-of-Organization">Type of Organization </option>
+                                        <option value="Society">Society </option>
+                                        <option value="Trust"> Trust</option>
+                                        <option value=" Section-8-Company"> Section 8 Company</option>
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
+
                                 </div>
-                                <div class="calender-input">
-                                    <input type="text" id="date" placeholder="Date of Incorporation"
-                                        onclick="openCalendar()" readonly>
-                                    <span id="calendar-icon" onclick="openCalendar()">📅</span>
+                                <div class="calender-input group-inputbox" onclick="openCalendar()">
+                                    <input type="text" id="date" placeholder="Date of Incorporation">
+                                    <span class="calender-icon">📅</span>
                                 </div>
                             </div>
                         </div>
@@ -117,15 +116,14 @@
                                     <input type="tel" class="form-control" id="registration-Contact-number"
                                         name="registration-Contact-number" placeholder="Contact Number" required>
                                 </div>
-                                <div class="select-wrapper">
-                                    <select id="Organization-Type" class="form-selectbox custom-selectbox "
-                                        name="Organization-Type">
-                                        <option value="" selected>Designation</option>
-                                        <option value="Founder">Founder</option>
-                                        <option value="Secretary">Secretary</option>
-
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Designation">Designation </option>
+                                        <option value="Founder">Founder  </option>
+                                        <option value="Secretary"> Secretary</option>
+                            
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
+
                                 </div>
 
                             </div>
@@ -136,27 +134,24 @@
                         <div class="col-md-6">
                             <div class="d-flex flex-column gap-3">
 
-                                <div class="select-wrapper"> <select id="Focus-Area"
-                                        class="form-selectbox custom-selectbox " name="Focus-Area">
-                                        <option value="" selected>Focus Area</option>
-                                        <option value="Education">Education</option>
-                                        <option value="Healthcare">Healthcare</option>
-                                        <option value="Environment">Environment</option>
-                                        <option value="Women-Empowernment">Women Empowernment</option>
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Focus-Area">Focus-Area  </option>
+                                        <option value="Education">Education  </option>
+                                        <option value="Environment">  Environment</option>
+                                        <option value="Women-Empowerment">  Women Empowerment</option>
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </div>
-                                <div class="select-wrapper"> <select id="target-beneficiaries"
-                                        class="form-selectbox custom-selectbox " name="target-beneficiaries">
-                                        <option value="" selected>Target Beneficiaries</option>
-                                        <option value="Children">Children</option>
-                                        <option value="Women">Women</option>
-                                        <option value="Rural-Communities">Rural Communities</option>
+
+                                </div> 
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Target-Beneficiaries">Target Beneficiaries  </option>
+                                        <option value="Children">Children  </option>
+                                        <option value="Women">  Women</option>
+                                        <option value="Rural-Communities">  Rural Communities</option>
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
+
                                 </div>
-
-
                             </div>
 
                         </div>
@@ -185,7 +180,7 @@
                                     </div>
 
                                 </div>
-                                <div>
+                                <div class="file-inputbox">
                                     <label for="file" class="choose-file-label">80G Certificate</label>
                                     <input type="file" id="file" class="custom-file-input">
                                 </div>
@@ -194,11 +189,11 @@
                         </div>
                         <div class="col-md-6">
                             <div class="d-flex flex-column gap-3">
-                                <div>
+                                <div class="file-inputbox">
                                     <label for="file" class="choose-file-label">12A Certificate</label>
                                     <input type="file" id="file" class="custom-file-input">
                                 </div>
-                                <div>
+                                <div class="file-inputbox">
                                     <label for="file" class="choose-file-label">FCRA Certificate</label>
                                     <input type="file" id="file" class="custom-file-input">
 
@@ -219,7 +214,7 @@
                             the best of my knowledge.</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center submit-btn"><button type="submit"
-                            class="text-uppercase">Submit</button></div>
+                            class="text-uppercase primary-btn">Submit</button></div>
                 </div>
             </form>
 

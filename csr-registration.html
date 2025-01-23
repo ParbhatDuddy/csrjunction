@@ -15,10 +15,15 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- Bootstrap Links -->
+   
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Swiper -->
+     <!-- Flatpickr -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+     <!-- Flatpickr -->
     <!-- Linking Css -->
     <link rel="stylesheet" href="style.css">
     <!-- Linking Css -->
@@ -71,23 +76,22 @@
                         <div class="col-md-6">
                             <div class="d-flex flex-column gap-3 ">
 
-                                <div class="select-wrapper">
-
-                                    <select id="Organization-Type" class="form-selectbox custom-selectbox "
-                                        name="Organization-Type">
-                                        <option value="" selected>Organization Type</option>
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Organization-Type">Organization Type</option>
                                         <option value="Ngo">NGO</option>
-                                        <option value="Trust">Trust</option>
+                                        <option value="Trust"> Trust</option>
                                         <option value="Foundation">Foundation</option>
                                         <option value="Company">Company</option>
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
+
                                 </div>
-                                <div class="calender-input group-inputbox">
-                                    <input type="text" id="date" placeholder="Date of Incorporation"
-                                        onclick="openCalendar()" readonly>
-                                    <span id="calendar-icon" onclick="openCalendar()">📅</span>
+                                <div class="calender-input group-inputbox" onclick="openCalendar()">
+                                    <input type="text" id="date" placeholder="Date of Incorporation">
+                                    <span class="calender-icon">📅</span>
                                 </div>
+                              
+                                  
                             </div>
                         </div>
                     </div>
@@ -137,14 +141,14 @@
                                         name="CSR-Registration-Number"
                                         placeholder="CSR Registration Number (If applicable)" required>
                                 </div>
-                                <div class="select-wrapper"> <select id="Focus-Area"
-                                        class="form-selectbox custom-selectbox " name="Focus-Area">
-                                        <option value="Focus-Area" class="selected" selected>Focus Area</option>
+                                <div class="select-container ">
+                                    <select class="filter-selectbox-reg ">
+                                        <option selected value="Focus-Area">Focus Area </option>
                                         <option value="Education">Education</option>
-                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Healthcare"> Healthcare</option>
                                         <option value="Environment">Environment</option>
                                     </select>
-                                    <i class="fa-solid fa-chevron-down"></i>
+
                                 </div>
 
 
@@ -166,7 +170,7 @@
                     <div class="row g-4 ">
                         <p class="tag-heading fw-normal mb-0">Upload CSR Policy Document (PDF/Doc)</p>
                         <div class="col-md-6">
-                            <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3 group-inputbox">
                                 <input type="file" id="policy-document" name="policy-document" required>
 
                             </div>
@@ -178,7 +182,7 @@
                         <p class="tag-heading fw-normal mb-0">Upload Registration Certificates (e.g., 80G, 12A, etc.)
                         </p>
                         <div class="col-md-6">
-                            <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-column gap-3 group-inputbox">
                                 <input type="file" id="registration-certificate" name="registration-certificate"
                                     required>
 
@@ -195,8 +199,8 @@
                             accurate to
                             the best of my knowledge.</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center submit-btn"><button type="submit"
-                            class="text-uppercase">Submit</button></div>
+                    <div class="d-flex justify-content-center align-items-center submit-btn "><button type="submit"
+                            class="text-uppercase primary-btn">Submit</button></div>
                 </div>
             </form>
 
@@ -210,7 +214,7 @@
     <div id="footer"></div>
     <!-- Impoting Footer -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  
 
     <!-- Include Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
