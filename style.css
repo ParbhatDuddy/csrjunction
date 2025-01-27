@@ -832,7 +832,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 12px;
-    padding: 10px;
+    padding: 10px 26px;
     background-color: #04a5ab;
     border-radius: 4px;
 }
@@ -1058,26 +1058,10 @@
     font-weight: 400;
 }
 
-.signup-options button {
-    padding: 12px;
-    background-color: #fff;
-    border-radius: 7px;
-    border: 1px solid silver;
 
-}
 
-.signup-options button p {
-    font-size: 12px;
-}
 
-.signup-options button img {
-    height: 18px;
-    width: 18px;
-}
 
-.signup-options .box-para {
-    color: #5d5d5db3;
-}
 
 /* Sign Up page */
 /* Resources Page */
@@ -1518,10 +1502,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .signup-options button {
 
-        width: 100%;
-    }
 
     /* Projects Filter */
     .filter-btn {
@@ -1600,7 +1581,7 @@
 
     /* login page */
 
-    /* login page */
+
     /* Login */
 }
 
