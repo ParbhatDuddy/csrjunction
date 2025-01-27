@@ -16,8 +16,8 @@
         </div>
 
         <div class="d-flex align-items-center gap-2 text-white fw-medium">
-            <i class="fa-solid fa-envelope"></i>
-            <p class="mb-0 box-para">csrjunction1@gmail.com</p>
+            <p class="mb-0 box-para fw-semibold" id="userGreeting">Welcome, Guest </p>
+            <i class="fa-solid fa-right-to-bracket " onclick="window.location.href='sign-up.html'"></i>
         </div>
     </div>
 
@@ -59,9 +59,12 @@
                 <li class="nav-item">
                     <a class="text-decoration-none  active nav-tags" aria-current="page" href="contact-us.html">Contact Us</a>
                 </li>
-                <li class="nav-item m-xl-auto d-flex ps-2 gap-3">
+                <li class="nav-item m-xl-auto d-flex ps-2 gap-3" id="accessButtons">
                     <button class="btn secondary-btn gradient-text" onclick="window.location.href='login.html'">Login</button>
                     <button class="btn primary-btn" onclick="window.location.href='sign-up.html'">Signup</button>
+                </li>
+                <li class="nav-item d-none"  id="dashboardButton">
+                    <button class="btn primary-btn" onclick="window.location.href='sign-up.html'">Dashboard</button>
                 </li>
             </ul>
 

@@ -759,6 +759,7 @@
 
 .group-inputbox span i {
     color: #fff;
+    font-size: 12px;
 }
 
 .group-inputbox span {
@@ -815,6 +816,57 @@
     color: #5D5D5D;
 }
 
+/* Login Page */
+.tabs-button .nav-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+
+    padding: 10px;
+    background-color: #020b3c11;
+    border-radius: 4px;
+}
+
+.tabs-button .nav-item a.active {
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #04a5ab;
+    border-radius: 4px;
+}
+
+
+
+
+.otp-input input {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #000;
+}
+
+.otp-input input::-webkit-outer-spin-button,
+.otp-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.otp-input input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.self-btn {
+    font-size: 16px;
+}
+
+/* Login Page */
 
 
 
@@ -870,7 +922,8 @@
         background-color: #fff;
     }
 }
-.filter-selectbox-reg{
+
+.filter-selectbox-reg {
     appearance: none;
     border: 1px solid transparent;
     border-right: none;
@@ -880,7 +933,8 @@
     width: 100%;
     padding: 2.7%;
     background: var(--arrow-icon) no-repeat right 1em center / 1.4em,
-    linear-gradient(to right, #26D0CE 0%, #1A2980 100%) no-repeat right center /3.2em;;
+        linear-gradient(to right, #26D0CE 0%, #1A2980 100%) no-repeat right center /3.2em;
+    ;
     color: #000;
     border-radius: 2px;
     font-size: 13px;
@@ -950,7 +1004,7 @@
 }
 
 .signup-form {
-    padding: 8% 6% 2% 6%;
+    padding: 5% 6% 2% 6%;
 }
 
 .sign-left {
@@ -963,30 +1017,33 @@
 
 .signup-title {
     color: #25C1C7;
-    font-size: 28px;
-    font-weight: 700;
+    /* font-size: 28px; */
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .signup-form form input {
-    padding: 2.5%;
+    padding: 2%;
     width: 100%;
     background-color: #F4F4F4;
     border: none;
     outline: none;
     font-size: 12px;
     border-radius: 4px;
-} 
+}
 
- .signup-form form input::placeholder {
-    font-size: 13px;
-     padding-left: 12px; 
+.signup-form form input::placeholder {
+    font-size: 11px;
+    padding-left: 8px;
 }
 
 .signup-form form button {
-    padding: 2%;
+
+    padding: 1.6%;
     color: #fff;
     background-color: #25C1C7;
-    /* width: 75%; */
+    width: 75%;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -1094,17 +1151,18 @@
     color: #000;
 }
 
- 
+
 .calender-input {
     position: relative;
-} 
-.calender-icon{
+}
+
+.calender-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0%;
-padding: 2.3%; 
-height: 100.9%;
+    padding: 2.3%;
+    height: 100.9%;
 }
 
 /* #calendar-icon {
@@ -1114,7 +1172,7 @@ height: 100.9%;
     height: 102%;
     padding: 2.2%;
   
-} */ 
+} */
 
 .select-wrapper {
     position: relative;
@@ -1155,7 +1213,8 @@ height: 100.9%;
 .submit-btn button:hover {
     background-color: #04a5ab;
 }
-.file-inputbox input{
+
+.file-inputbox input {
     padding: 2%;
     border: 1px solid transparent !important;
     border-image: linear-gradient(to right, #26D0CE 0%, #1A2980 100%) 1 !important;
@@ -1386,13 +1445,15 @@ height: 100.9%;
         padding: 4%;
         font-size: 12px;
     }
-    .file-inputbox input{
+
+    .file-inputbox input {
         padding: 1.5%;
     }
-    .calender-icon{
+
+    .calender-icon {
         padding: 1.59%;
     }
-    
+
     /* csr registration */
     /* Filter Projects */
     .filter-btn {
@@ -1405,10 +1466,11 @@ height: 100.9%;
         padding: 2%;
         font-size: 12px;
     }
-    .filter-selectbox-reg{
+
+    .filter-selectbox-reg {
         padding: 2%;
         font-size: 12px;
-    
+
     }
 
     .form-selectbox {
@@ -1416,6 +1478,10 @@ height: 100.9%;
     }
 
     /* Forms */
+    /* login page */
+
+
+    /* login page */
 
 }
 
@@ -1428,7 +1494,8 @@ height: 100.9%;
         left: 3%;
         width: 96%;
     }
-    .file-inputbox input{
+
+    .file-inputbox input {
         padding: 3.5%;
     }
 
@@ -1472,20 +1539,23 @@ height: 100.9%;
     .form-selectbox {
         padding: 4%;
     }
+
     .group-inputbox span {
         flex: .1;
         border-radius: 0px;
         background: linear-gradient(to right, #26D0CE 0%, #1A2980 100%);
         border: none;
     }
-    .filter-selectbox-reg{
+
+    .filter-selectbox-reg {
         padding: 4%;
-    
+
     }
-    .calender-icon{
+
+    .calender-icon {
         padding: 3%;
     }
-    
+
 
     /* Forms */
 
@@ -1522,7 +1592,16 @@ height: 100.9%;
     }
 
     /* Projects Page */
+    /* Login */
+    .otp-input input {
+        width: 25px;
+        height: 25px;
+    }
 
+    /* login page */
+
+    /* login page */
+    /* Login */
 }
 
 @media (max-width:343px) {

@@ -46,12 +46,9 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-
-
-// 
-
+// Calender
 function openCalendar() {
-    flatpickr("#date", {
+    flatpickr("#date", {      //Using Flatpicker for calender
         dateFormat: "d-m-Y",
         position: "auto",
         disableMobile: true, 
